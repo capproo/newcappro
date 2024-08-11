@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,body{
+  width: 100%;
+  height: 100%;
+  background-color: #F8F8F8;
+}
+#main{
+  width: 100%;
+  height: 100%;
+  background-color: #F8F8F8;
+  position: relative;
+  padding-top: 0.1px;
+}
+#nav{
+  width: 100%;
+  height: 13vh;
+  /* background-color: red; */
+  margin-top: 40px;
+  border-top: 2px black solid;
+  border-bottom: 2px black solid;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 30px;
+  /* font-weight: 200; */
+  font-family: "Inter", sans-serif;
+}
+#nav h1{
+  /* background-color: yellow; */
+  width: 20%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* font-family: monument; */
+  font-size: 3.5vw;
+  letter-spacing: -2px;
+}
+#nav h2{
+  /* background-color: yellow; */
+  width: 18vw;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-right: 2px black solid;
+  font-weight: 500;
+  font-size: 18px;
+  font-size: 1.6vw;
+}
+#nav h2 i{
+  font-size: 3vw;
+}
+#nav h2:nth-last-child(2){
+  width: 27vw;
+}
+#center{
+  height: 85%;
+  width: 100%;
+  /* background-color: red; */
+  padding: 2vw 4vw 5vw 4vw;
+  position: relative;
+}
+#content{
+  height: 100%;
+  width: 100%;
+  background-color: blue;
+  position: relative;
+  overflow: hidden;
+}
+#content video{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+#overlay{
+  width: 100%;
+  height: 55%;
+  bottom: 0;
+  /* background-color: red; */
+  position: absolute;
+  padding: 0vw 3vw ;
+  margin-bottom: -40px;
+}
+
+#over1{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #F8F8F8;
+  margin-bottom: 1vw;
+  
+}
+#over1 h1{
+  font-family: "Inter", sans-serif;
+  font-size: 3.5vw;
+  text-transform: capitalize;
+  padding-bottom: 10px;
+  mix-blend-mode: difference;
+}
+
+#over1 h2{
+  font-size: 1.5vw;
+  font-family: "Inter", sans-serif;
+  /* background-color: blue; */
+  padding: 1.3vw 2vw;
+  border-radius: 50%;
+  border: 1px white solid;
+  border-bottom: 5px rgb(255, 255, 255) solid;
+}
+
+#over2{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 2px white solid;
+  font-family: "Inter", sans-serif;
+  color: white;
+  padding: 1vw 5px;
+}
+#over2 h4{
+  font-size: 1.5vw;
+  font-weight: 400;
+}
+#over2 img{
+  height: 3vw;
+}
+#scroll{
+  height:20vh;
+  width: 100%;
+  /* display: flex; */
+  /* background-color: red; */
+  justify-content: space-around;
+  padding: 200px 0vw;
+  white-space: nowrap;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  margin-top: -2.5vw;
+  margin-bottom: 300vw;
+
+}
+
+#container{
+  height: 50%;
+  width: 110%;
+  /* background-color: blue; */
+  display: inline-block;
+  padding: 1vw 3.4vw 200px 3.4vw;
+  animation-name: anime;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  margin: -200px 0px;
+}
+#scroll img{
+  /* display: none; */
+  height: 17vh;
+  width: fit-content;
+  /* border-radius: 50%; */
+  object-fit: contain;
+  object-position: bottom;
+  /* padding: 1vw 2vw;
+  margin: 0vw;
+  margin-top: 1vw; */
+  margin: 5vw 3.4vw;
+  
+  /* background-color: blue; */
+}
+@keyframes anime {
+  from{
+    transform: translateX(0);
+  }
+  to{
+    transform: translateX(-100%);
+  }
+}
